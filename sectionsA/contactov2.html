@@ -4,89 +4,82 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styesv2/styles.css">
-    <title>Creaciones Motola</title>
+    <link rel="stylesheet" href="../styesv2/styles.css">
+    <title>Creaciones Motola - Contacto</title>
 </head>
-
 <body>
+    
     <header>
         <nav>
             <ul>
                 <li>
-                    <a class="botonLink" href="index.html">Inicio</a>
+                    <a href="../index.html">Inicio</a>
                 </li>
                 <li>
-                    <a class="botonLink" href="./sectionsA/nosotrosv2.html">Nosotros</a>
+                    <a href="nosotrosv2.html">Nosotros</a>
                 </li>
                 <li>
-                    <a class="botonLink" href="./sectionsA/productosv2.html">Productos</a>
+                    <a href="productosv2.html">Productos</a>
                 </li>
                 <li>
-                    <a class="botonLink" href="./sectionsA/cursosv2.html">Cursos</a>
+                    <a href="cursosv2.html">Cursos</a>
                 </li>
                 <li>
-                    <a class="botonLink" href="./sectionsA/contactov2.html">Contacto</a>
+                    <a href="contactov2.html">Contacto</a>
                 </li>
             </ul>
         </nav>
     </header>
+    
+    <main id="formulario" class="secciones">
 
-    <main>
-
-        <article>
-            <h1 class="titulos">Artesanías en Porcelana Fría</h1>
-            <img src="./resourcesA/logoCreacionesMotolav2.jpg" alt="logo de la pagina">
-                <a class="botonLink" href="#pie">Seguínos en nuestas Redes Sociales</a>
-        </article>
-
-        <div class="container">
-        <article>
-            <h1 class="titulos">Novedades</h1>
-            <div class="productoContainer">
-                <img src="./resourcesA/productosArcoIrisv2.jpg" alt="arco iris en porcelana fria con una tierna nube con carita y moño">
-                <p>Souvenirs - Arco Iris</p>
-                <p>$$$</p>
-            </div>
-            <div class="productoContainer">
-                <img src="./resourcesA/productosAbuelitav2.jpg" alt="abuelita sentada en un sillon en porcelana fría">
-                <p>Abuelita</p>
-                <p>$$$</p>
-            </div>
-        </article>
+        <h1 class="titulos">Formulario De Contacto</h1>
 
         <article>
-            <h2 class="titulos">Destacados</h2>
-            <div class="productoContainer">
-                <img src="./resourcesA/productosAmongUsv2.jpg"
-                        alt="among us impostor con cuchillo en mano acechando a tripulante">
-                <p>Souvenirs - Among Us</p>
-                <p>$$$</p>
-            </div>
-            <div class="productoContainer">
-                <img src="./resourcesA/productosPuñoDeHulkv2.jpg" alt="puño de hulk en porcelana fria">
-                <p>Avengers - Puño de Hulk</p>
-                <p>$$$</p>
-            </div>
+
+            <form action="#">
+
+                <div class="formularioCampo">
+                        <input class="formularioInput" type="text" placeholder="juan" name="nombre">
+                </div>
+
+                <div class="formularioCampo">
+                        <input class="formularioInput" type="text" placeholder="juanejemplo@gmail.com" name="email">
+                </div>
+
+                <div class="formularioCampo">
+                        <input class="formularioInput" type="number" placeholder="edad" name="edad">
+                </div>
+
+                <div class="formularioCampo">
+                        <textarea class="formularioInput" placeholder="Hacé tu consulta"></textarea>
+                </div>
+
+                <div class="formularioCampo">
+                    <select class="formularioSelect">
+                        <option disabled selected>Entrega</option>
+                        <option value="Enviar a mi domicilio">Enviar a mi domicilio</option>
+                        <option value="Punto de encuentro">Punto de encuentro</option>
+                        <option value="Retiro en sucursal">Retiro en sucursal</option>
+                    </select>
+                </div>
+
+                <div class="formularioCampo"> 
+                    <p>¿Desea recibir notificaciones sobre nosotros?</p>
+                    <input type="checkbox" name="acepta" value="1">
+                </div>
+
+                <div class="formularioCampo">
+                    <input class="formularioInput" type="submit" value="Enviar Formulario">
+                    <input class="formularioInput" type="reset" value="Iniciar de Nuevo">
+                </div>
+            </form>
         </article>
 
-        <article>
-            <h2 class="titulos">Ofertas</h2>
-            <div class="productoContainer">
-                <img src="./resourcesA/productosMjolnirv2.jpg" alt="martillo de thor en porcelana fria">
-                <p>Avengers - Martillo de Thor (Mjölnir)</p>
-                <p>$$$</p>
-            </div>
-            <div class="productoContainer">
-                <img src="./resourcesA/productosPeppaYGeorgev2.jpg" alt="peppa y su hermanito george">
-                <p>Peppa pig y George</p>
-                <p>$$$</p>
-            </div>
-        </article>
-        </div>
     </main>
 
     <footer>
-        <div id="pie">
+        <div>
             <p>Nuestras Redes Sociales</p>
             <ul>
                 <li>
@@ -136,5 +129,4 @@
         </div>
     </footer>
 </body>
-
 </html>

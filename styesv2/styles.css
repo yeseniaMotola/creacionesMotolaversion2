@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+body{
+    background-color: #fffbef;
+}
+
+header{
+    background-color: #f5b989;
+    padding: 1rem;
+    box-shadow:  4px 4px 4px 4px #c26e2593;
+    border: solid 2px #f7b57f;
+    position: sticky;
+    top: 0px;
+    margin-bottom: 2rem;
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    }
+    
+li{
+    list-style-type: none;
+    }
+
+    .botonLink{
+        text-decoration: none;
+        background-color: #8181da;
+        font-family: 'Overpass', sans-serif;
+        color: #fffbef;
+        text-align: center;
+        padding: 0.2rem;
+        border-radius: 5px;
+        margin: 10px;
+        transition: all 0,5s;
+    }
+    .botonLink:hover{
+        background-color: rgb(114, 60, 175);
+    }
+
+article div img{
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.titulos{
+    font-size: 1.8rem;
+    background-color: #8181da;
+    color: #fffbef;
+}
+
+h1, h2, h3, p{
+    text-align: center;
+    margin: 1rem;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.gridContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+article{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f5b989;
+    color: #914e10;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem 0.5rem #c26e2593;
+}
+
+.media2{
+    width: 100%;
+    min-width: 250px;
+    min-height: 200px;
+    max-width: 350px;
+    max-height: 300px;
+}
+
+
+form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.casillaFormulario{
+    background-color: rgb(129, 129, 218);
+    font-family: 'Overpass', sans-serif;
+    color: #fffbef;
+    text-align: center;
+    padding: 16px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.cajaFormulario{
+    height: 40px;
+    margin: 20px;
+    top: 20px;
+}
+
+footer{
+    padding: 0.2rem;
+    background-color: #f5b989;
+    box-shadow: inset 0px 0px 4px 0px #c26e2593;
+    border: solid 2px #f7b57f;
+    margin-top: 2rem;
+}
+
+.icono{
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 720px){
+
+    .container{
+        display: grid;
+        grid-template-columns: auto;
+    }
+
+    .gridNosotros,
+    .gridProductos{
+        grid-template-columns: auto;
+    }
+
+}
+
+@media (max-width: 480px){
+
+    h1, h2, h3, p{
+        font-size: 1em;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    article div img{
+        width: 100%;
+        min-width: 100px;
+        min-height: 100px;
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .icono{
+        width: 25px;
+        height: 25px;
+    }
+}
+
