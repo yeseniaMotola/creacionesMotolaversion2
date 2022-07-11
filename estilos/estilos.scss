@@ -10,9 +10,9 @@
 
 .botonLink {
     text-decoration: none;
-    background-color: #8181da;
+    background-color: $colorSecundario;
     font-family: 'Overpass', sans-serif;
-    color: #fffbef;
+    color: $colorFondo;
     text-align: center;
     padding: 0.2rem;
     border-radius: 5px;
@@ -85,7 +85,7 @@ article {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #f5b989;
+    background-color: $colorFondo;
     color: #914e10;
     border-radius: 1rem;
     box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem #c26e2593;
@@ -111,7 +111,7 @@ form {
 .casillaFormulario {
     background-color: rgb(129, 129, 218);
     font-family: 'Overpass', sans-serif;
-    color: #fffbef;
+    color: $colorFondo;
     text-align: center;
     padding: 1rem;
     border-radius: 5px;
@@ -127,9 +127,9 @@ form {
 }
 
 .formularioSelect {
-    background-color: #8181da;
+    background-color: $colorSecundario;
     padding: 1rem;
-    border: 2px solid #8181da;
+    border: 2px solid $colorSecundario;
     border-radius: 1rem;
 }
 
@@ -212,7 +212,7 @@ form {
 
     .formularioSelect {
         padding: 0.5rem;
-        border: 2px solid #8181da;
+        border: 2px solid $colorSecundario;
         border-radius: 1rem;
     }
 
