@@ -2,3 +2,25 @@
     border: solid 2px $colorBorde;
 }
 
+@mixin bordeRedoneado {
+    border-radius: 0.5rem;
+}
+
+@mixin imagenProducto {
+    width: 100%;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 300px;
+    max-height: 300px;
+
+}
+
+@mixin articuloFlex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $colorPrincipal;
+    color: $fontsColor;
+    border-radius: 1rem;
+
+}

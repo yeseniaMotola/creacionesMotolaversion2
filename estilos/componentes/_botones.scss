@@ -1,0 +1,15 @@
+.botonLink {
+    text-decoration: none;
+    background-color: $colorSecundario;
+    font-family: 'Overpass', sans-serif;
+    color: $colorFondo;
+    text-align: center;
+    padding: 0.2rem;
+    @include bordeRedoneado;
+    margin: 10px;
+    transition: 0.5s;
+
+    & :hover {
+        color: $colorHover;
+    }
+}
