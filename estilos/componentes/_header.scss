@@ -2,7 +2,7 @@ header {
     background-color: $colorPrincipal;
     padding: 1rem;
     box-shadow: 4px 4px 4px 4px #c26e2593;
-    border: solid 2px #f7b57f;
+    @include borde;
     position: sticky;
     top: 0px;
     margin-bottom: 2rem;
