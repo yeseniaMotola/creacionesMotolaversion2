@@ -72,7 +72,7 @@ footer ul li {
   min-height: 200px;
   max-width: 300px;
   max-height: 300px;
-  transition: all 2.1s;
+  transition: 2.1s;
 }
 
 .gridContainer {
@@ -97,7 +97,7 @@ footer ul li {
   min-height: 200px;
   max-width: 300px;
   max-height: 300px;
-  transition: all 2.1s;
+  transition: 2.1s;
 }
 
 .botonLink {
