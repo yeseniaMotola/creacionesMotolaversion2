@@ -1,15 +1,15 @@
 .botonLink {
     text-decoration: none;
-    background-color: $colorSecundario;
-    font-family: 'Overpass', sans-serif;
-    color: $colorFondo;
+    background-color: map-get($colores, "colorSecundario");
+    font-family: $fonts;
+    color: map-get($colores, "colorFondo");
     text-align: center;
     padding: 0.2rem;
-    @include bordeRedoneado;
+    @extend .bordeRedoneado;
     margin: 10px;
     transition: 0.5s;
 
     & :hover {
-        color: $colorHover;
+        color: map-get($colores, "colorHover");
     }
 }

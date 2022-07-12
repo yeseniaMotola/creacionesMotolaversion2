@@ -16,7 +16,7 @@ body {
 header {
   background-color: #f5b989;
   padding: 1rem;
-  box-shadow: 4px 4px 4px 4px rgba(194, 110, 37, 0.5764705882);
+  box-shadow: 4px 4px 4px 4px #c26e2593;
   border: solid 2px #f7b57f;
   position: -webkit-sticky;
   position: sticky;
@@ -239,7 +239,7 @@ form {
 @media (max-width: 480px) {
 
   .titulos,
-  p {
+p {
     font-size: 1em;
   }
 
@@ -304,6 +304,4 @@ form {
   .gridContainer {
     margin: 0;
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

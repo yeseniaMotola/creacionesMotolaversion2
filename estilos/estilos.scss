@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&family=Overpass:ital,wght@0,500;1,600&family=Roboto+Flex:opsz,wght@8..144,300&display=swap');
 
+/*base*/
 @import "./base/variables";
 @import "./base/mixins";
+@import "./base/extend";
+/*generales*/
 @import "generales";
+/*componentes*/
 @import "./componentes/header";
 @import "./componentes/footer";
 @import "./componentes/contenedor";
@@ -12,9 +16,9 @@
 
 .titulos {
     font-size: 1.6rem;
-    background-color: $colorSecundario;
-    color: $colorFondo;
-    @include bordeRedoneado;
+    background-color: map-get($colores, "colorSecundario");
+    color: map-get($colores, "colorFondo");
+    @extend .bordeRedondeado;
 }
 
 h1,
@@ -23,7 +27,7 @@ h3,
 p {
     text-align: center;
     margin: 0.5rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: $fonts;
 }
 
 .carrusel {
@@ -57,19 +61,19 @@ form {
 }
 
 .formulario {
-    background-color: $colorPrincipal;
-    @include bordeRedoneado;
+    background-color: map-get($colores, "colorPrincipal");
+    @extend .bordeRedondeado;
     margin: 1rem;
     padding: 0.5rem;
 }
 
 .casillaFormulario {
-    background-color: $colorSecundario;
-    font-family: 'Overpass', sans-serif;
-    color: $colorPrincipal;
+    background-color: map-get($colores, "colorSecundario");
+    font-family: $fonts;
+    color: map-get($colores, "colorPrincipal");
     text-align: center;
     padding: 1rem;
-    @include bordeRedoneado;
+    @extend .bordeRedondeado;
     margin-bottom: 1rem;
 }
 
@@ -77,15 +81,15 @@ form {
     border: none;
     padding: 1rem;
     margin-top: 1rem;
-    @include bordeRedoneado;
+    @extend .bordeRedondeado;
     width: 90%;
 }
 
 .formularioSelect {
-    background-color: $colorSecundario;
+    background-color: map-get($colores, "colorSecundario");
     padding: 1rem;
     @include borde;
-    @include bordeRedoneado;
+    @extend .bordeRedondeado;
 }
 
 .cajaFormulario {
@@ -150,21 +154,21 @@ form {
 
     .casillaFormulario {
         padding: 0.5rem;
-        @include bordeRedoneado;
+        @extend .bordeRedondeado;
         margin-bottom: 1rem;
     }
 
     .formularioInput {
         padding: 0.5rem;
         margin-top: 1rem;
-        @include bordeRedoneado;
+        @extend .bordeRedondeado;
         width: 90%;
     }
 
     .formularioSelect {
         padding: 0.5rem;
         border: 2px solid $colorSecundario;
-        @include bordeRedoneado;
+        @extend .bordeRedondeado;
     }
 
     .cajaFormulario {

@@ -1,5 +1,5 @@
 header {
-    background-color: $colorPrincipal;
+    background-color: (map-get($colores, "colorPrincipal"));
     padding: 1rem;
     box-shadow: 4px 4px 4px 4px #c26e2593;
     @include borde;
@@ -18,5 +18,4 @@ header {
             list-style-type: none;
         }
     }
-
 }
